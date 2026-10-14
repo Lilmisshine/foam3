@@ -137,6 +137,9 @@ Describes the modal component hierarchy: `Popup` (base, full-screen overlay), `S
 **[CSSLayout](CSSLayout.md)**
 What a `css:` block goes through before the browser sees it (installed on first create, the `^` and `$token` text rewrites), which box scrolls and how to pin a header, hiding with `shown`, and how popups, modals and the z-index layers stack.
 
+**[Themes](Themes.md)**
+How an app gets its look: which Theme a user gets (domain, then spid), `cssTokens` and `ColorToken` with their `$hover`/`$foreground` forms and dark variants, recolouring a theme with `CSSTokenOverride` rows, reading a token from JS, and the legacy `%PRIMARY1%` macros to avoid.
+
 **[Notifications](Notifications.md)**
 Overview of the notification system: creating `Notification` objects via `notificationDAO`, extending the base class for custom types, display via the bell icon and `NotificationCitationView`, and how to write custom citation views.
 
