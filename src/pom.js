@@ -265,6 +265,7 @@ foam.POM({
     { name: "foam/u2/parse/CSSParser",                                flags: "js" },
     { name: "foam/u2/parse/test/CSSParserTest",                       flags: "js&test|java&test" },
     { name: "foam/u2/parse/test/CSSParserJavaTest",                   flags: "js&test|java&test" },
+    { name: "foam/comics/v2/test/DAOBrowseControllerViewTest",          flags: "js&test|java&test" },
     { name: "foam/u2/test/CSSTokensJSTest",                           flags: "js&test|java&test" },
     { name: "foam/u2/test/CSSStatusTokensJSTest",                     flags: "js&test|java&test" },
     { name: "foam/u2/test/CSSTokensContrastTest",                     flags: "js&test|java&test" },
