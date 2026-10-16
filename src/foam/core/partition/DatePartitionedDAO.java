@@ -43,6 +43,11 @@ public class DatePartitionedDAO
     scheme_ = scheme;
   }
 
+  public DatePartitionedDAO(X x, ClassInfo of, String dirName, Expr partitionProperty, DatePartitioningScheme scheme, int timeWindow) {
+    this(x, of, dirName, partitionProperty, scheme);
+    timeWindow_ = timeWindow;
+  }
+
   public DatePartitionedDAO setTimeWindow(int days) {
     timeWindow_ = days;
     return this;
