@@ -68,6 +68,9 @@ p({
       .setMultiLineOutput(true)
       .setOf(foam.core.reflow.Flow.getOwnClassInfo())
       .setRuler(true)
+      .setDecorator(new foam.u2.markdown.LoadFlowFromFileDAO.Builder(x)
+        .setDelegate(new foam.dao.NullDAO(x, foam.core.reflow.Flow.getOwnClassInfo()))
+        .build())
       .build();
   """,
   "client":"""{"of":"foam.core.reflow.Flow"}"""
