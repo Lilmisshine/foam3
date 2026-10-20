@@ -51,12 +51,19 @@ Setup /opt Directory
 
     sudo chown -R $USER /opt
 
+# Tutorial
+If you have come to this page from the [FOAM Tutorial](https://github.com/foam-foundation/foam3/blob/development/doc/tutorials/foam-tutorial.md), you may stop here. The tutorial adds FOAM as a git-submodule, so you do not need to build FOAM in isolation to follow along.
+
 # FOAM
 Git Clone
 
     git clone https://github.com/foam-foundation/foam3.git
 
 # Application
+First-time setup command
+
+    ./build.sh --install
+
 Create an example application
 
     ./build.sh -TStandard,setup/Project --appName:example --package:com.foamdev --adminPassword:badpassword
